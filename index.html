@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivial Game</title>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="assets/javascript/app.js" type="text/javascript"></script>
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+  <!-- Our own CSS stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" media="screen">
+</head>
+
+<body>
+
+
+  <div class="jumbotron bg">
+    <h1 class="text-center">Trivial Game</h1>
+    <h2></h2>
+    <h3 class="text-center">You will have One minute to anwer to all the questions in the Trivial game! </h3>
+    <h3 class="text-center"> The game ends when the time runs out. After the end of the game, </h3>
+    <h3 class="text-center">a page will reveal the number of questions that players answer correctly and incorrectly</h3>
+    <h3 class="text-center">Click the Start button to start the game</h3>
+
+
+    <div class="col-md-12"><br></div>
+    <div class="text-center" id="but">
+      <button id="start">
+        <h2>Start</h2>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Start the timer and Show the questions -->
+  <a name="center"></a>
+  <div class="jumbotron bg" id="header">
+    <h1 class="text-center">Trivial Game</h1>
+    <h2></h2>
+    <h3 class="text-center"> The game ends when the time runs out! </h3>
+
+    <section class="row">
+      <div class="col-md-12"></div>
+    </section>
+    <section class="row">
+      <div class="col-md-12"></div>
+    </section>
+
+    <section class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-3">
+        <h2 class="block-header">Time Remains:</h2>
+      </div>
+      <div class="col-md-1">
+        <h2 class="text-center" id="timeLeft"></h2>
+      </div>
+      <div class="col-md-4"></div>
+    </section>
+
+    <section class="row bg">
+      <div class="col-md-12 text-center" id="trivial"></div>
+      <div class="col-md-12"><br></div>
+      <div class="text-center" id="doneBut">
+          <button id="getAnswersBut">
+            <h2>Done</h2>
+          </button>
+        </div>
+    </section>
+
+  </div>
+  
+
+
+
+  <a name="bot"></a>
+
+  <div class="jumbotron bg" id="header">
+    <h1 class="text-center">Trivial Game</h1>
+    <h2 class="text-center"> All Done! </h2>
+
+
+    <div class="row">
+      <div class="col-md-4"> </div>
+      <div class="col-md-3">
+        <h3 class="block-header">Correct Answers:</h3>
+      </div>
+      <div class="col-md-3">
+        <h3 id="totalCorrect"></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"> </div>
+      <div class="col-md-3">
+        <h3 class="block-header">Incorrect Answers: </h3>
+      </div>
+      <div class="col-md-3">
+        <h3 id="totalIncorrect"></h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4"> </div>
+      <div class="col-md-3">
+        <h3 class="block-header">Unanswered: </h3>
+      </div>
+      <div class="col-md-3">
+        <h3 id="totalunanswered"></h3>
+      </div>
+    </div>
+    <div class="col-md-12"><br></div>
+      <div class="text-center" id="newGame">
+          <button class="neWGamebutton" id="newGameBut">
+            <h2>New Game!</h2>
+          </button>
+        </div>
+
+  </div>
+
+  </div>
+
+</body>
+
+</html>

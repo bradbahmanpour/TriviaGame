@@ -1,0 +1,42 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://image.freepik.com/free-vector/abstract-white-background-vector-illustration_1407-419.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#buttons {
+  /* Positioning */
+  margin: 50px 0;
+  /* Typography */
+  text-align: center;
+}
+
+button {
+  /* Box-model */
+  width: 150px;
+  height: 70px;
+  font-size: 20px;
+  text-align:  center;
+}
+
+.neWGamebutton {
+  /* Box-model */
+  width: 250px;
+  height: 100px;
+  font-size: 20px;
+  text-align:  center;
+}
+
